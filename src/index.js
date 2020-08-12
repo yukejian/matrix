@@ -137,7 +137,6 @@ class Hi extends React.Component{
           onClick={this.alertHandle}
           />
       </div>
-      
     );
   }
 }
