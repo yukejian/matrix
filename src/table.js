@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 class Table extends Component {
   render() {
+    const name = "于克健";
     return (
       <table>
         <thead>
@@ -16,8 +17,8 @@ class Table extends Component {
             <td>程序猿</td>
           </tr>
           <tr>
-            <td>王翠花</td>
-            
+            <td>{name}</td>
+            <td>123</td>
           </tr>
         </tbody>
       </table>
