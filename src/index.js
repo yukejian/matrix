@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 //导入样式文件
 import './index.css';
 //导入其他组件
-import Table from './table.js';
+import App from './table.js';
 
 const scaleNames = {
   c: 'Celsius',
@@ -92,56 +92,56 @@ class Calculator extends React.Component {
           onTemperatureChange={this.handleFahrenheitChange} />
         <BoilingVerdict
           celsius={parseFloat(celsius)} />
-        <Table />
-        <Hello />
-        <Hi/>
+        <App />
+        {/* <Hello />
+        <Hi/> */}
       </div>
     );
   }
 }
 
-function Hello(){
-  return (
-    <div>hello,react!</div>
-  );
-}
+// function Hello(){
+//   return (
+//     <div>hello,react!</div>
+//   );
+// }
 
-function Click(props){
-  return(
-    <button onClick={props.fun}>click</button>
-  );
-}
+// function Click(props){
+//   return(
+//     <button onClick={props.fun}>click</button>
+//   );
+// }
 
 
 
-class Hi extends React.Component{
-  constructor(props){
-    super(props);
-    this.state = {text:"h"};
-    this.ruturnHandle = this.ruturnHandle.bind(this);
-    this.alertHandle = this.alertHandle.bind(this);
-  }
+// class Hi extends React.Component{
+//   constructor(props){
+//     super(props);
+//     this.state = {text:"h"};
+//     this.ruturnHandle = this.ruturnHandle.bind(this);
+//     this.alertHandle = this.alertHandle.bind(this);
+//   }
 
-  ruturnHandle(e){
-    this.setState({text:e.target.value});
-  }
+//   ruturnHandle(e){
+//     this.setState({text:e.target.value});
+//   }
 
-  alertHandle(e){
-    alert(this.state.text);
-  }
+//   alertHandle(e){
+//     alert(this.state.text);
+//   }
 
-  render(){
-    return (
-      <div>
+//   render(){
+//     return (
+//       <div>
         
-        <input onChange={this.ruturnHandle}/>
-        <Click
-          onClick={this.alertHandle}
-          />
-      </div>
-    );
-  }
-}
+//         <input onChange={this.ruturnHandle}/>
+//         <Click
+//           onClick={this.alertHandle}
+//           />
+//       </div>
+//     );
+//   }
+// }
 
 ReactDOM.render(
   <Calculator />,
