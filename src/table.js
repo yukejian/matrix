@@ -17,7 +17,7 @@ class Table extends Component {
           </tr>
           <tr>
             <td>王翠花</td>
-            <td>攻城狮</td>
+            
           </tr>
         </tbody>
       </table>
